@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  position: relative;
+  padding: 40px 0;
+  background-color: coral;
+}
+.header .container .row label {
+  display: none;
+  font-size: 20px;
+}
+.header .container .row input {
+  display: none;
+}
+.header .container .row .nav .navItem {
+  display: flex;
+  gap: 40px;
+}
+.header .container .row .nav .navItem .navList {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+@media (max-width: 900px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    background-color: coral;
+  }
+  .header .container .row {
+    justify-content: space-between;
+  }
+  .header .container .row label {
+    display: flex;
+    font-size: 20px;
+  }
+  .header .container .row input {
+    display: none;
+  }
+  .header .container .row input:checked ~ .nav .navItem {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .container .row .nav .navItem {
+    background-color: darkgreen;
+    position: absolute;
+    z-index: 3;
+    display: none;
+    gap: 20px;
+    margin-top: 53px;
+    margin-left: 30px;
+  }
+  .header .container .row .nav .navItem .navList {
+    font-size: 20px;
+    font-weight: 900;
+  }
+}/*# sourceMappingURL=index.css.map */
