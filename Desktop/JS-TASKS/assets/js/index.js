@@ -1814,21 +1814,46 @@ console.log(repeat([2, 3, 4, 5, 5, 5, 6, 6, 6, 6, 7, 8, 9]));
 
 //1 avqust
 //no1
-const timerElement = document.getElementById("time");
-let minute = 0;
-let sekond = 0;
+// const timerElement = document.getElementById("time");
+// let minute = 0;
+// let sekond = 0;
 
-let timer = setInterval(show, 100, 1, 23);
-function show(minutess, seconds) {
-  if (minute < 59) {
-    second++;
-  } else {
-    minute++;
-    second = 0;
-  }
-  timerElement.innerHTML = `${minute}:${sekond}`;
+// let timer = setInterval(show, 100, 1, 23);
+// function show(minutess, seconds) {
+//   if (minute < 59) {
+//     second++;
+//   } else {
+//     minute++;
+//     second = 0;
+//   }
+//   timerElement.innerHTML = `${minute}:${sekond}`;
+//   if (minute == minutess && sekond == seconds) {
+//     clearInterval(timer);
+//   }
+// }
 
-  if (minute == minutess && sekond == seconds) {
-    clearInterval(timer);
-  }
-}
+
+
+// const timerElement = document.getElementById("timer");
+
+// let minutes = 0;
+// let sekonds = 0;
+
+// const interval = setInterval(() => {
+//   // Zaman formatla və göstər
+//   const formattedMinutes = String(minutes).padStart(2, '0');
+//   const formattedSeconds = String(sekonds).padStart(2, '0');
+//   timerElement.textContent = `${formattedMinutes}:${formattedSeconds}`;
+
+//   // Bitmə nöqtəsinə çatdısa dayandır
+//   if (minutes === 1 && sekonds === 17) {
+//     clearInterval(interval);
+//   }
+
+//   // Saniyələri artır
+//   sekonds++;
+//   if (sekonds === 60) {
+//     sekonds = 0;
+//     minutes++;
+//   }
+// }, 100);
