@@ -1796,9 +1796,9 @@ function numbers(a, b, c) {
   let max = Math.max(a, b, c);
   let min = Math.min(a, b, c);
   let arifmetic = (a + b + c) / 3;
-   console.log(max)
-   console.log(min)
-   console.log(arifmetic)
+  console.log(max);
+  console.log(min);
+  console.log(arifmetic);
 }
 numbers(2, 4, 6);
 
@@ -1808,19 +1808,27 @@ function repeat(arr) {
     acc[curr] = (acc[curr] || 0) + 1;
     return acc;
   }, {});
-  return arrRepeat
+  return arrRepeat;
 }
 console.log(repeat([2, 3, 4, 5, 5, 5, 6, 6, 6, 6, 7, 8, 9]));
 
-
-
-
-
-
-
-//30 iyun
+//1 avqust
 //no1
+const timerElement = document.getElementById("time");
+let minute = 0;
+let sekond = 0;
 
+let timer = setInterval(show, 100, 1, 23);
+function show(minutess, seconds) {
+  if (minute < 59) {
+    second++;
+  } else {
+    minute++;
+    second = 0;
+  }
+  timerElement.innerHTML = `${minute}:${sekond}`;
 
-
-
+  if (minute == minutess && sekond == seconds) {
+    clearInterval(timer);
+  }
+}
