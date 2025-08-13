@@ -1,0 +1,136 @@
+@use "../variables";
+
+.drawing {
+  background: url(/assets/images/pensPhoto.webp);
+  .container {
+    .row {
+      justify-content: center;
+      .drawingCard {
+        text-align: center;
+        background-color: variables.$white;
+        padding: 25px 60px 25px 60px;
+        border-radius: 60px;
+        margin: 85px 0;
+        h4 {
+          font-family: "Fredoka One", cursive;
+          font-size: 20px;
+          font-weight: 400;
+          color: variables.$pink;
+          padding-top: 20px;
+        }
+        h2 {
+          font-size: 40px;
+          font-weight: 400;
+          font-family: "Fredoka One", cursive;
+          color: variables.$darkBlue;
+          font-weight: 400;
+        }
+        p {
+          font-family: "DM Sans", sans-serif;
+          color: variables.$grey;
+          font-size: 16px;
+          line-height: 30px;
+          font-weight: normal;
+          font-size: 18px;
+          margin-bottom: 30px;
+        }
+        button {
+          background-color: variables.$pink;
+          font-family: "Concert One", cursive;
+          padding: 15px 43px;
+          color: variables.$white;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 400;
+          border-radius: 30px;
+          border-color: transparent;
+          transition: 1s;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        .lowerCards {
+          display: flex;
+          column-gap: 50px;
+          justify-content: center;
+          padding-top: 50px;
+          .firstCard {
+            h3 {
+              font-size: 30px;
+              font-weight: 400;
+              font-family: "Fredoka One", cursive;
+              color: variables.$darkBlue;
+            }
+            p {
+              font-family: "DM Sans", sans-serif;
+              color: variables.$grey;
+              font-weight: normal;
+              font-size: 14px;
+            }
+          }
+          .secondCard {
+            h3 {
+              font-size: 30px;
+              font-weight: 400;
+              font-family: "Fredoka One", cursive;
+              color: variables.$darkBlue;
+            }
+            p {
+              font-family: "DM Sans", sans-serif;
+              color: variables.$grey;
+              font-weight: normal;
+              font-size: 14px;
+            }
+          }
+          .thirdCard {
+            h3 {
+              font-size: 30px;
+              font-family: "Fredoka One", cursive;
+              color: variables.$darkBlue;
+              font-weight: 400;
+            }
+            p {
+              font-family: "DM Sans", sans-serif;
+              color: variables.$grey;
+              font-weight: normal;
+              font-size: 14px;
+            }
+          }
+          .fourthCard {
+            h3 {
+              font-size: 30px;
+              font-family: "Fredoka One", cursive;
+              color: variables.$darkBlue;
+              font-weight: 400;
+            }
+            p {
+              font-family: "DM Sans", sans-serif;
+              color: variables.$grey;
+              font-weight: normal;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .drawing {
+    .container {
+      .row {
+        .drawingCard {
+          border-radius: 30px;
+          width: 50%;
+          h2 {
+            font-size: 30px;
+          }
+          .lowerCards {
+            gap: 5px;
+          }
+        }
+      }
+    }
+  }
+}

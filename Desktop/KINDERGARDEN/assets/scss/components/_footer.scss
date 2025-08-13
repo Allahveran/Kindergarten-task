@@ -1,0 +1,139 @@
+@use "../variables";
+
+.footer {
+  background-color: variables.$footerBlue;
+  .return {
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+    color: variables.$white;
+    background-color: variables.$pink;
+    border-radius: 50%;
+    padding: 15px 15px 15px 20px;
+    font-size: 20px;
+  }
+  .container {
+    width: 60%;
+    .row {
+      padding-top: 100px;
+      .leftSide {
+        p {
+          color: variables.$white;
+          font-size: 16px;
+          font-family: "DM Sans", sans-serif;
+          line-height: 30px;
+          margin-bottom: 15px;
+          font-weight: normal;
+          padding-top: 25px;
+        }
+        .footerConnects {
+          padding-top: 25px;
+          padding-left: 10px;
+          display: flex;
+          gap: 30px;
+          .fa-twitter,
+          .fa-facebook,
+          .fa-pinterest-p,
+          .fa-linkedin-in {
+            font-size: 15px;
+            color: variables.$white;
+            padding: 10px;
+            background-color: variables.$footerlightBlue;
+            border-radius: 50%;
+            &:hover {
+              background-color: variables.$pink;
+            }
+          }
+        }
+      }
+      .middleSide {
+        h2 {
+          color: variables.$white;
+          font-size: 22px;
+          margin-bottom: 29px;
+          font-weight: 600;
+          font-family: "Fredoka One", cursive;
+          font-style: normal;
+        }
+        .linkList {
+          .linkItem {
+            color: variables.$white;
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 20px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+            a {
+              color: variables.$white;
+              font-family: "DM Sans", sans-serif;
+            }
+          }
+        }
+      }
+      .rightSide {
+        h2 {
+          color: variables.$white;
+          font-size: 22px;
+          margin-bottom: 29px;
+          font-weight: 600;
+          font-family: "Fredoka One", cursive;
+          font-style: normal;
+        }
+        .linkList {
+          .linkItem {
+            color: variables.$white;
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 20px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+            a {
+              color: variables.$white;
+              font-family: "DM Sans", sans-serif;
+            }
+          }
+        }
+      }
+    }
+    .copyRight {
+      text-align: center;
+      color: variables.$white;
+      font-weight: 400;
+      font-size: 18px;
+      margin-bottom: 12px;
+      font-family: "DM Sans", sans-serif;
+      padding: 100px 0 50px 0;
+      .fa-heart {
+        color: variables.$aquaBlue;
+      }
+      span {
+        color: variables.$aquaBlue;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    .container {
+      .row {
+        flex-wrap: wrap;
+        .leftSide {
+          .footerConnects {
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+}

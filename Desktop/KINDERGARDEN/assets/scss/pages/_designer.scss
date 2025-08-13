@@ -1,0 +1,61 @@
+@use "../variables";
+
+.designer {
+  padding-top: 120px;
+  padding-bottom: 101px;
+  background-image: url(/assets/images/designerPhoto.webp);
+  .container {
+    .row {
+      flex-direction: column;
+      text-align: center;
+      .designerLogo {
+        img {
+          margin: 0 0 30px;
+        }
+      }
+      p {
+        line-height: 1.5;
+        margin-bottom: 50px;
+        font-size: 22px;
+        color: variables.$darkBlue;
+        font-weight: 400;
+        font-family: "DM Sans", sans-serif;
+      }
+      .aboutDesigner {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .infoDesigner {
+          h2 {
+            font-family: "Concert One", cursive;
+            color: variables.$pink;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: left;
+          }
+          p {
+            color: variables.$grey;
+            font-weight: 500;
+            font-family: "DM Sans", sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 15px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .designer {
+    .container {
+      .row {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+@use "../variables";
+
+.hero {
+  background-image: url(/assets/images/hero.png);
+  &.about {
+    background-image: url(/assets/images/heroAbout.webp);
+  }
+  .container {
+    width: 66%;
+    .row {
+      .leftHero {
+        margin: 110px 0;
+        background-color: variables.$white;
+        padding: 100px 120px 70px;
+        border-radius: 90px;
+        &.leftAbout {
+          margin: 60px 0;
+          background-color: transparent;
+        }
+        .title {
+          color: variables.$darkBlue;
+          font-family: "Fredoka One", cursive;
+          margin-top: 0px;
+          font-size: 80px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 1.1;
+          margin: 0 0 22px;
+          &.aboutTitle {
+            color: variables.$white;
+            font-size: 80px;
+            font-weight: 400;
+            margin-bottom: 22px;
+            font-family: "Fredoka One", cursive;
+            font-weight: 400;
+          }
+        }
+        h2 {
+          font-family: "Fredoka One", cursive;
+          color: variables.$yellow;
+          font-size: 44px;
+          line-height: 1.2;
+          font-weight: 400;
+          margin-bottom: 30px;
+          display: block;
+          margin: 0 0 30px;
+        }
+        button {
+          background-color: variables.$pink;
+          font-family: "Concert One", cursive;
+          padding: 17px 30px;
+          color: variables.$white;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1;
+          border-radius: 30px;
+          letter-spacing: 1px;
+          border-color: transparent;
+          transition: 1s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 40%;
+  }
+  .leftHero {
+    border-radius: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    .container {
+      width: 95%;
+      .row {
+        .leftHero {
+          padding: 100px 90px 70px 50px;
+          width: 40%;
+          border-radius: 20px;
+          .title {
+            font-size: 30px;
+          }
+          h2 {
+            font-size: 21px;
+          }
+          &.leftAbout {
+            .aboutTitle {
+              font-size: 30px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

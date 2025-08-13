@@ -1,0 +1,120 @@
+@use "../variables";
+
+.instra {
+  .row {
+    .instraPictures {
+      position: relative;
+      transition: 0.4s all;
+      .fa-instagram {
+        opacity: 0;
+        visibility: hidden;
+        color: variables.$white;
+        position: absolute;
+        z-index: 5;
+        top: 48%;
+        left: 48%;
+        transition: 0.5s transform;
+        font-size: 50px;
+        transition: 0.4s all;
+      }
+      .instraPhotos {
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          position: relative;
+          display: block;
+        }
+      }
+      &:hover {
+        .fa-instagram {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .instra {
+    .row {
+      .instraPictures {
+        position: relative;
+        transition: 0.4s all;
+        .fa-instagram {
+          opacity: 0;
+          visibility: hidden;
+          color: variables.$white;
+          position: absolute;
+          z-index: 5;
+          top: 48%;
+          left: 48%;
+          transition: 0.5s transform;
+          font-size: 50px;
+          transition: 0.4s all;
+        }
+        .instraPhotos {
+          width: 100%;
+          height: 100%;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: relative;
+            display: block;
+          }
+        }
+        &:hover {
+          .fa-instagram {
+            opacity: 1;
+            visibility: visible;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .instra {
+    .row {
+      width: 100%;
+      .instraPictures {
+        position: relative;
+        transition: 0.4s all;
+        .fa-instagram {
+          opacity: 0;
+          visibility: hidden;
+          color: variables.$white;
+          position: absolute;
+          z-index: 5;
+          top: 48%;
+          left: 48%;
+          transition: 0.5s transform;
+          font-size: 50px;
+          transition: 0.4s all;
+        }
+        .instraPhotos {
+          width: 100%;
+          height: 100%;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: relative;
+            display: block;
+          }
+        }
+        &:hover {
+          .fa-instagram {
+            opacity: 1;
+            visibility: visible;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

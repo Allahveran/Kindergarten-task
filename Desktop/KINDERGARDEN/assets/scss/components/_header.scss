@@ -1,0 +1,118 @@
+@use "../variables";
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: variables.$white;
+  box-shadow: 0 5px 20px variables.$grey;
+  z-index: 100;
+  .container {
+    .row {
+      .headerMenu {
+        display: none;
+        #menuBar {
+          display: none;
+        }
+      }
+      .navBar {
+        .navList {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          .navItem {
+            font-family: "Concert One", cursive;
+            padding: 27px 4px 0 4px;
+            font-size: 18px;
+            color: variables.$white;
+            a:hover {
+              color: variables.$pink;
+            }
+            a::after {
+              content: "";
+              width: 0;
+              height: 3px;
+              display: block;
+              margin-top: 27px;
+              transition: 0.5s;
+            }
+            a:hover::after {
+              content: "";
+              width: 100%;
+              height: 3px;
+              background-color: variables.$pink;
+            }
+          }
+        }
+        .headerBtn {
+          background-color: variables.$aquaBlue;
+          font-family: "Concert One", cursive;
+          padding: 13px 43px;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 600;
+          border-radius: 30px;
+          color: variables.$white;
+        }
+        .headerBtn:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    .container {
+      .row {
+        .headerMenu {
+          display: block;
+          height: 54px;
+          width: 100%;
+          background-color: variables.$menuGray;
+          color: variables.$white;
+          text-align: end;
+          margin-top: 90px;
+          position: absolute;
+          z-index: 30;
+          #menuBar {
+            &:checked .navBar {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+      .navBar {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .header {
+    .container {
+      .row {
+        .headerMenu {
+          display: block;
+          height: 54px;
+          width: 100%;
+          background-color: variables.$menuGray;
+          color: variables.$white;
+          text-align: end;
+          margin-top: 90px;
+          position: absolute;
+          z-index: 30;
+          .menuBar {
+            background-color: variables.$black;
+          }
+        }
+        .navBar {
+          display: none;
+        }
+      }
+    }
+  }
+}
+

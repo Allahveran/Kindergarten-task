@@ -1,0 +1,157 @@
+@use "../variables";
+
+.welcome {
+  .container {
+    .welcomeTitle {
+      text-align: center;
+      margin-top: 100px;
+      h2 {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1.2;
+        font-family: "Fredoka One", cursive;
+        color: variables.$darkBlue;
+        font-style: normal;
+        padding: 0 0 15px;
+        span {
+          color: variables.$pink;
+        }
+      }
+      p {
+        font-family: "DM Sans", sans-serif;
+        color: variables.$darkBlue;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+    .row {
+      justify-content: space-between;
+      padding: 100px 0;
+      .leftWelcome {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .leftUpper {
+          display: flex;
+
+          .words {
+            padding-left: 20px;
+            h3 {
+              font-family: "Concert One", cursive;
+              font-size: 25px;
+              line-height: 1.2;
+              font-weight: 400;
+              color: variables.$lightBlue;
+            }
+            p {
+              font-size: 16px;
+              line-height: 1.6;
+              color: variables.$darkBlue;
+              font-weight: 400;
+              font-family: "DM Sans", sans-serif;
+            }
+          }
+        }
+
+        .leftMiddle {
+          display: flex;
+          .words {
+            padding-left: 20px;
+            h3 {
+              font-family: "Concert One", cursive;
+              font-size: 25px;
+              line-height: 1.2;
+              font-weight: 400;
+              color: variables.$lightBlue;
+            }
+            p {
+              font-size: 16px;
+              line-height: 1.6;
+              color: variables.$darkBlue;
+              font-weight: 400;
+              font-family: "DM Sans", sans-serif;
+            }
+          }
+        }
+        .leftLover {
+          display: flex;
+          .words {
+            padding-left: 20px;
+            h3 {
+              font-family: "Concert One", cursive;
+              font-size: 25px;
+              line-height: 1.2;
+              font-weight: 400;
+              color: variables.$lightBlue;
+            }
+            p {
+              font-size: 16px;
+              line-height: 1.6;
+              color: variables.$darkBlue;
+              font-weight: 400;
+              font-family: "DM Sans", sans-serif;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  .welcome {
+    .container {
+      width: 90%;
+      .row {
+        .rightWelcome {
+          img {
+            width: 530px;
+            height: 420px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .welcome {
+    .container {
+      width: 90%;
+      .row {
+        flex-direction: column;
+        .rightWelcome {
+          margin-top: 50px;
+          img {
+            width: 530px;
+            height: 420px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    .container {
+      width: 90%;
+      .welcomeTitle {
+        h2 {
+          font-size: 20px;
+        }
+      }
+      .row {
+        flex-direction: column;
+        .rightWelcome {
+          margin-top: 50px;
+          img {
+            width: 202px;
+            height: 160px;
+          }
+        }
+      }
+    }
+  }
+}

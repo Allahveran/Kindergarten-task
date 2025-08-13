@@ -1,0 +1,66 @@
+@use "../variables";
+
+.topHeader {
+  background-color: variables.$pink;
+  color: variables.$white;
+  width: 100%;
+  .container {
+    .row {
+      // align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      .firstNav {
+        .firstList {
+          display: flex;
+          gap: 40px;
+          li {
+            a {
+              font-size: 15px;
+              font-family: "DM Sans", sans-serif;
+              font-weight: normal;
+              color: variables.$white;
+              padding-left: 16px;
+              &:hover {
+                transform: rotateX("angle");
+              }
+            }
+          }
+        }
+      }
+      .secondNav {
+        .secondList {
+          display: flex;
+          gap: 20px;
+          a {
+            color: variables.$white;
+            .fa-facebook,
+            .fa-twitter,
+            .fa-linkedin-in,
+            .fa-instagram {
+              &:hover {
+                transform: rotateY(180deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .topHeader {
+    .container {
+      .row {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .topHeader {
+    display: none;
+  }
+}
