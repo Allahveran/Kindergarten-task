@@ -1,0 +1,57 @@
+@use "../variables" as *;
+
+.footer {
+    padding: 20px 0 50px 0;
+    background-color: rgb(16, 16, 100);
+  .return {
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+    color: $white;
+    background-color: $navGreen;
+    border-radius: 50%;
+    padding: 15px 15px 15px 20px;
+    font-size: 20px;
+  }
+  .container {
+    .copyRight {
+      color: $titleColor;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      text-align: center;
+      line-height: 40px;
+      .color-danger {
+        color: $navGreen;
+      }
+    }
+    .navbar {
+      .list {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 20px;
+         li{
+          a{
+           .fa-facebook ,.fa-twitter ,.fa-linkedin-in ,.fa-instagram{
+            color: $navGreen;
+            padding: 20px;
+            background-color: $navBlack;
+            border-radius: 50%;
+            font-size: 20px;
+            transform: scale(1);
+            
+            &:hover{
+                transform: scale(1.1);
+                opacity: 0.8;
+
+            }
+           }
+          }
+        }
+      }
+    }
+  }
+}

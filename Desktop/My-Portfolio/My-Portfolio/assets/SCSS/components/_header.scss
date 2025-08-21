@@ -1,0 +1,56 @@
+@use "../variables" as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: $headerGrey;
+  z-index: 100;
+   box-shadow: 0 8px 8px $navShgrey;
+  .container {
+    .row {
+        justify-content: center;
+      .navbar {
+        padding: 16px  16px 0 16px;
+        .navList {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          .navItem {
+            padding: 15px 20px 0 20px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+              "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+              "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            a {
+              color: $navList;
+              &:hover {
+                color: $navGreen;
+              }
+            }
+             a::after {
+              content: "";
+              width: 100%;
+              transform: scale(0);
+              height: 3px;
+              display: block;
+              margin-top: 27px;
+              transition: 0.5s;
+               display: block;
+            }
+            a:hover::after {
+              content: "";
+              width: 100%;
+              height: 3px;
+              transform: scale(1);
+              background-color: $navGreen;
+            }
+          }
+        }
+      }
+    }
+  }
+}

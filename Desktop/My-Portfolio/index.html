@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/assets/SCSS/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar">
+                    <ul class="navList">
+                        <li class="navItem "><a href="#">Ana Səhifə</a></li>
+                        <li class="navItem "><a href="#about">Haqqımda</a></li>
+                        <li class="navItem "><a href="#portfolio">Portfolio</a></li>
+                        <li class="navItem "><a href="#interests">Maraqlar</a></li>
+                        <li class="navItem "><a href="#gallery">Qalereya</a></li>
+                        <li class="navItem "><a href="#contact">Əlaqə</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="leftHero">
+                        <div class="firstPhoto">
+                        </div>
+                    </div>
+                    <div class="rightHero">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="aboutTitle"></h2>
+                <div class="row">
+                    <div class="leftAbout"></div>
+                    <div class="middleAbout"></div>
+                    <div class="rightAbout"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="portfolioTitle">Mənim Portfoliom</h2>
+                <div class="row">
+                    <div class="leftPortfolio">
+                        <p>Bu mənim hazirladığım saytlardır.</p>
+                    </div>
+                    <div class="rightPortfolio">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./assets/images/first colorlib.jpeg" alt="image">
+                                </div>
+                                <div class="swiper-slide"><img src="./assets/images/second colorlib.jpeg" alt="image">
+                                </div>
+                                <div class="swiper-slide"><img src="./assets/images/thirdColorlib.jpeg" alt="image">
+                                </div>
+                                <div class="swiper-slide"><img src="./assets/images/fourtColorlib.jpeg" alt="image">
+                                </div>
+                                <div class="swiper-slide"><img src="./assets/images/fifthColorlib.jpeg" alt="image">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests" class="interests">
+            <div class="container">
+                <h2 class="interestsTitle"></h2>
+                <div class="row">
+                    <div class="movies">
+                        <p class="infoMovie"></p>
+                        <ul class="movieList">
+                        </ul>
+                    </div>
+                    <div class="musics">
+                        <p class="infoMusic"></p>
+                        <ul class="musicList"></ul>
+                    </div>
+                    <div class="otherInterests">
+                        <p></p>
+                        <div class="graffiti"><img src="./assets/images/graffiti.jpg" alt="image"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2 class="galleryTitle">Qalereya</h2>
+                <div class="images"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="contactTitle">Əlaqə</h2>
+                <div class="row">
+                    <div class="leftContact">
+                        <h3 class="touch">Əlaqə saxlamaq üçün:</h3>
+                        <form>
+                            <input type="text" name="name" id="name" placeholder="Adınız" tabindex="1">
+                            <input type="text" name="surname" id="surname" placeholder="Soyadınız" tabindex="2">
+                            <input type="tel" name="phone" id="phone" placeholder="Əlaqə nömrəniz" tabindex="3">
+                            <textarea type="text" name="message" id="message" placeholder="Əlavə qeyd"
+                                tabindex="4"></textarea>
+                            <p class="warning"></p>
+                            <button class="sendMessage">Göndər</button>
+                        </form>
+                    </div>
+                    <div class="rightContact">
+                        <h3 class="details">Əlaqə vasitələri:</h3>
+                        <p class="tel">Tel: <a href="tel:+994705096500">+994705096500.</a> </p>
+                        <p class="mail">E-poçt: <a href="allahveren1998@gmail.com">allahveren1998@gmail.com.</a> </p>
+                        <p class="location">Addres: <a
+                                href="https://www.google.com/maps/place/SHEYX+8KM/@40.4120099,49.9304037,387m/data=!3m1!1e3!4m6!3m5!1s0x40306372e47a4a6d:0x4eedb09f238c39e2!8m2!3d40.4118559!4d49.9319787!16s%2Fg%2F11v5sg9bqk?entry=ttu&g_ep=EgoyMDI1MDgxMS4wIKXMDSoASAFQAw%3D%3D">Bəkir
+                                Çobanzadə küçəsi,2352.</a> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="#" class="return"><i class="fas fa-level-up-alt"></i></a>
+        <div class="container">
+            <p class="copyRight">Copyright ©2025 All rights reserved | This template is made with <i
+                    class="fa fa-heart color-danger" aria-hidden="true"></i> by <span>Colorlib</span></p>
+            <nav class="navbar">
+                <ul class="list">
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#" target="_blank"> <i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="./assets/JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
